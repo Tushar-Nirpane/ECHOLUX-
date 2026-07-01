@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-space-bg text-slate-200;
+}
+
+/* Recharts renders its own SVG text fills via inline styles, but the
+   default cursor/legend text otherwise inherits this — keeps stray browser
+   default sans-serif from sneaking into chart chrome. */
+.recharts-wrapper,
+.recharts-wrapper * {
+  font-family: 'JetBrains Mono', 'Roboto Mono', ui-monospace, monospace;
+}

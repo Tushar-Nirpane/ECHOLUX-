@@ -1,0 +1,18 @@
+# Environments & Cache
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.DS_Store
+
+# Data Directory (Ignore large files and outputs, but keep folder structure)
+data/raw/*
+data/processed/*
+data/outputs/*
+data/toi_list.csv
+data/classifier_model.pkl
+
+# Allow gitkeeps
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/outputs/.gitkeep
